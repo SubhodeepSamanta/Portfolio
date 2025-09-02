@@ -7,7 +7,7 @@ type themeState={
 
 const useThemeStore = create<themeState>((set) => {
     return{
-        theme: "dark",
+        theme: "light",
         toggleTheme: () => set((state) => {
             const newTheme= state.theme==="dark"?"light":"dark";
             localStorage.setItem("theme",newTheme);
